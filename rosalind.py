@@ -16,4 +16,10 @@ rnaToProtein = {"UUU": "F", "CUU": "L", "AUU": "I", "GUU": "V",
     "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G" }
 
 def readFile(fileName):
-  doSomething = True
+  dataFile = open(fileName)
+  data = dataFile.read()
+  totalData = ""
+  for i in data:
+    if not i == '\n':
+      totalData += i
+  return totalData
