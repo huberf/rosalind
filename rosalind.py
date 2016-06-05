@@ -14,3 +14,6 @@ rnaToProtein = {"UUU": "F", "CUU": "L", "AUU": "I", "GUU": "V",
     "UGC": "C",      "CGC": "R",      "AGC": "S",      "GGC": "G",
     "UGA": "Stop",   "CGA": "R",      "AGA": "R",      "GGA": "G",
     "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G" }
+
+def readFile(fileName):
+  doSomething = True
