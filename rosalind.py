@@ -16,10 +16,16 @@ rnaToProtein = {"UUU": "F", "CUU": "L", "AUU": "I", "GUU": "V",
     "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G" }
 
 def readFile(fileName):
-  dataFile = open(fileName)
+  dataFile = open(fileName, 'r')
   data = dataFile.read()
   totalData = ""
   for i in data:
     if not i == '\n':
       totalData += i
   return totalData
+
+def inRange(value, bottom, top):
+  if (value > bottom) and (value < top):
+    return True
+  else:
+    return False
