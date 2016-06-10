@@ -1,3 +1,5 @@
+# Lots of functions and data sets to help with problems on Rosalind.info
+
 rnaToProtein = {"UUU": "F", "CUU": "L", "AUU": "I", "GUU": "V",
     "UUC": "F",      "CUC": "L",      "AUC": "I",      "GUC": "V",
     "UUA": "L",      "CUA": "L",      "AUA": "I",      "GUA": "V",
