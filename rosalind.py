@@ -17,6 +17,7 @@ rnaToProtein = {"UUU": "F", "CUU": "L", "AUU": "I", "GUU": "V",
     "UGA": "Stop",   "CGA": "R",      "AGA": "R",      "GGA": "G",
     "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G" }
 
+# Fix formatting of Rosalind output files
 def readFile(fileName):
   dataFile = open(fileName, 'r')
   data = dataFile.read()
@@ -25,6 +26,11 @@ def readFile(fileName):
     if not i == '\n':
       totalData += i
   return totalData
+
+# Write output files
+def writeFile(fileName, data):
+  dataFile = open(fileName, 'w')
+  dataFile.write(data)
 
 def inRange(value, bottom, top):
   if (value > bottom) and (value < top):
